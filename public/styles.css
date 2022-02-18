@@ -1,0 +1,15 @@
+body {
+  min-height: 75vh;
+  background-color: aliceblue;
+}
+main {
+  min-height: 75vh;
+}
+.footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 12px 0px;
+}

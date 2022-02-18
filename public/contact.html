@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Helping Hand</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper" style="padding: 0px 12px">
+        <div class="container">
+          <a href="index.html" class="brand-logo">Helping Hand</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container" style="text-align: center">
+        <h2>Contact</h2>
+      </div>
+
+      <!--Modal.html-->
+      <div class="row center" style="padding-top: 20px">
+        <!-- Modal Trigger -->
+        <button data-target="modal1" class="btn red lighten-2 modal-trigger">Click here to contact</button>
+      </div>
+    </main>
+
+    <footer class="red lighten-5 footer">
+      <p>© 2022 by Helping Hand</p>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Custom Environemnt Script -->
+    <script src="contact.js"></script>
+  </body>
+</html>
+
+<!--Using a Modal Object for a project creating feature...-->
+<div>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content"></div>
+
+    <!--Project Details Inserted here!-->
+    <div class="row">
+      <div class="container">
+        <h4 style="margin-bottom: 18px">Contact me</h4>
+        <form id="msgForm" method="post">
+          <div class="input-field s12">
+            <input value="" id="name" type="text" class="validate" />
+            <label class="name" for="name">Name: </label>
+          </div>
+          <div class="input-field s12">
+            <input value="" id="email" type="text" class="validate" />
+            <label class="title" for="title">Email: </label>
+          </div>
+          <div class="input-field s12">
+            <input value="" id="description" type="text" class="validate" />
+            <label class="username" for="Message">Message: </label>
+          </div>
+          <div class="modal-footer">
+            <a onclick="newMsg()" class="modal-close waves-effect waves-light red lighten-2 btn">Submit</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
